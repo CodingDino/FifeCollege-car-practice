@@ -2,19 +2,51 @@
 //
 
 #include <iostream>
+#include "Car.h"
+
+void Print(Car toPrint)
+{
+    std::cout << "Car info:" << std::endl;
+    std::cout << "   Make: " << toPrint.make << std::endl;
+    std::cout << "   Model: " << toPrint.model << std::endl;
+    std::cout << "   Doors: " << toPrint.doors << std::endl;
+    std::cout << "   MPG: " << toPrint.mpg << std::endl;
+    std::cout << "   Mileage: " << toPrint.mileage << std::endl;
+    std::cout << "   Petrol: " << toPrint.petrol << std::endl;
+    std::cout << std::endl;
+}
+
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    
+    Car car1;
+    car1.make = "Geo";
+    car1.model = "Metro";
+    car1.doors = 3;
+    car1.mpg = 50.0f;
+    car1.mileage = 60000;
+    car1.petrol = 10.0f;
+
+
+    Car car2;
+    car2.make = "Ford";
+    car2.model = "Escort";
+    car2.doors = 5;
+    car2.mpg = 30.0f;
+    car2.mileage = 20000;
+    car2.petrol = 15.0f;
+
+    Car car3;
+    car3.make = "Honda";
+    car3.model = "Jazz";
+    car3.doors = 5;
+    car3.mpg = 50.0f;
+    car3.mileage = 3000;
+    car3.petrol = 10.0f;
+
+    Print(car1);
+    Print(car2);
+    Print(car3);
+
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
