@@ -45,8 +45,20 @@ int main()
     car3.mileage = 3000;
     car3.petrol = 10.0f;
 
-    Print(car1);
-    Print(car2);
-    Print(car3);
+    std::vector<std::string> testVector;
+
+    testVector.push_back("test");
+
+    car1.Print();
+    car2.Print();
+    car3.Print();
+
+    car1.Drive(10);
+    car2.Drive(20);
+    car3.Drive(30);
+
+    car1.Print();
+    car2.Print();
+    car3.Print();
 
 }
